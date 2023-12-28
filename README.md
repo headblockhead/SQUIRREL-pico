@@ -5,6 +5,24 @@
 
 This is an implementation of [SQUIRREL](https://github.com/headblockhead/SQUIRREL) as a template example for a 5-key keyboard.
 
+## Guide
+
+ - [external/](external/) Exernal libraries, maintained seperatly to the project.
+     - [pico-sdk](external/pico-sdk/) The pico SDK, used to build for the pico.
+     - [squirrel](external/squirrel/) The SQUIRREL library, provides key functions and quantum layers, etc.
+ - [src/](src/) Source code of the project.
+     - [main.c](src/main.c) Main file, runs input checking and GPIOs.
+     - [tinyusb/](src/tinyusb/) Stores tinyusb config files.
+         - [tusb_config.h](src/tinyusb/tusb_config.h) Defines common configuration and device classes.
+         - [usb_descriptors.c](src/tinyusb/usb_descriptors.c) Defines manufacturer and product ID and other HID constants.
+         - [usb_descriptors.h](src/tinyusb/usb_descriptors.h) Defines HID report IDs.
+ - [.gitignore](.gitignore) Removes some files from version control to not track build results, etc.
+ - [.gitmodules](.gitmodules) Defines the submodules (in [external](external/))
+ - [CMakeLists.txt](CMakeLists.txt) Defines how to build the project and its libraries.
+ - [README.md](README.md) This file (documentation and [XC](https://github.com/joerdav/xc) tasks.)
+ - [shell.nix](shell.nix) A [nix](https://nixos.org/) shell file that provides a reproducable and declarative environment for building and debugging.
+
+
 ## Tasks
 
 ### Build
