@@ -1,9 +1,9 @@
-# SQIREL-Pico
-(squirrel)
+# SQUIRREL Pico: SQUIRREL for the Raspberry Pi Pico.
+<sup>or: Simplified QMK Uniquely Immaculate (and) Readable Runtime Editable Library</sup>
 
-Simple QMK Inspired Runtime Editable Library (implemented for Pico).
+🚧 This project is currently **under construction**, so do not expect a usable result yet! 🚧
 
-This is an implementation of the SQIREL for the Raspberry Pi Pico.
+This is an implementation of [SQUIRREL](https://github.com/headblockhead/SQUIRREL) as a template example for a 5-key keyboard.
 
 ## Tasks
 
